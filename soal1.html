@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal 1 - Konstruktor Sepeda</title>
+    <link rel="stylesheet" href="soal1.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Soal 1</h1>
+            <a href="index.html" class="back-link">&#8592; Kembali</a>
+        </header>
+
+        <div class="info-box" id="inputInfo">
+            <p><strong>Masukkan data sepeda di bawah ini.</strong></p>
+        </div>
+
+        <div class="input-group">
+            <label for="merkInput">Merk Sepeda:</label>
+            <input type="text" id="merkInput" placeholder="Masukkan merk sepeda">
+        </div>
+
+        <div class="input-group">
+            <label for="jenisInput">Jenis Sepeda:</label>
+            <input type="text" id="jenisInput" placeholder="Masukkan jenis sepeda">
+        </div>
+
+        <div class="input-group">
+            <label for="warnaInput">Warna Sepeda:</label>
+            <input type="text" id="warnaInput" placeholder="Masukkan warna sepeda">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="inputSepeda()">Simpan Sepeda</button>
+            <button class="btn btn-secondary" onclick="resetOutput()">Reset</button>
+        </div>
+
+        <div class="result-box" id="outputContainer" style="display:none;"></div>
+
+        <div class="output-area" id="outputArea">
+            <p class="empty-output">Belum ada data yang diinput.</p>
+        </div>
+    </div>
+    <script src="soal1.js"></script>
+</body>
+</html>

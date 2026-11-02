@@ -1,0 +1,31 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; background: #0d1117; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; color: #c9d1d9; }
+.container { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 32px; max-width: 500px; width: 100%; position: relative; overflow: hidden; }
+.container::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #1f6feb, #238636); }
+header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; }
+h1 { font-size: 24px; color: #f0f6fc; margin: 0; font-weight: 600; }
+.back-link { color: #58a6ff; text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.2s; }
+.back-link:hover { color: #79c0ff; text-decoration: underline; }
+.sepeda-card { background: #21262d; border-radius: 8px; padding: 20px; margin-bottom: 20px; border-left: 4px solid #1f6feb; }
+.sepeda-card h3 { color: #58a6ff; margin-bottom: 12px; font-size: 18px; font-weight: 600; }
+.sepeda-card p { margin: 6px 0; color: #c9d1d9; font-size: 14px; }
+.sepeda-card p strong { color: #f0f6fc; }
+.empty-info { text-align: center; color: #8b949e; font-style: italic; padding: 30px 20px; }
+.info-box { background: #21262d; border-left: 4px solid #1f6feb; padding: 16px; border-radius: 0 8px 8px 0; margin-bottom: 24px; border: 1px solid #30363d; }
+.info-box p { margin: 6px 0; color: #c9d1d9; font-size: 14px; }
+.info-box p strong { color: #f0f6fc; }
+.input-group { margin-bottom: 20px; }
+.input-group label { display: block; margin-bottom: 8px; color: #8b949e; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+.input-group input { width: 100%; padding: 10px 14px; border: 1px solid #30363d; border-radius: 8px; font-size: 15px; background: #0d1117; color: #c9d1d9; transition: border-color 0.2s; box-sizing: border-box; }
+.input-group input:focus { outline: none; border-color: #1f6feb; }
+.controls { margin-top: 24px; display: flex; gap: 10px; justify-content: center; }
+.btn { padding: 10px 20px; border-radius: 8px; border: none; font-size: 14px; font-weight: 500; cursor: pointer; transition: all 0.2s; }
+.btn-primary { background: #238636; color: #fff; }
+.btn-primary:hover { background: #2ea043; }
+.btn-secondary { background: #21262d; color: #c9d1d9; border: 1px solid #30363d; }
+.btn-secondary:hover { background: #30363d; border-color: #1f6feb; }
+.output-area { background: #0d1117; border-radius: 8px; padding: 16px; margin-top: 20px; color: #c9d1d9; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; font-size: 13px; line-height: 1.6; max-height: 300px; overflow-y: auto; border: 1px solid #30363d; }
+.output-area p { margin: 8px 0; padding-bottom: 8px; border-bottom: 1px solid #30363d; }
+.output-area p:last-child { border-bottom: none; }
+.empty-output { color: #8b949e; font-style: italic; }
+.result-box { background: #21262d; border-radius: 8px; padding: 20px; margin-bottom: 20px; border-left: 4px solid #1f6feb; border: 1px solid #30363d; }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal 2 - Hitung Luas Persegi Panjang</title>
+    <link rel="stylesheet" href="soal2.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Soal 2</h1>
+            <a href="index.html" class="back-link">&#8592; Kembali</a>
+        </header>
+
+        <div class="info-box" id="inputInfo">
+            <p><strong>Masukkan panjang dan lebar persegi panjang di bawah ini.</strong></p>
+        </div>
+
+        <div class="input-group">
+            <label for="panjangInput">Panjang (cm):</label>
+            <input type="number" id="panjangInput" placeholder="Masukkan panjang" step="0.1">
+        </div>
+
+        <div class="input-group">
+            <label for="lebarInput">Lebar (cm):</label>
+            <input type="number" id="lebarInput" placeholder="Masukkan lebar" step="0.1">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="hitungLuasUI()">Hitung Luas</button>
+            <button class="btn btn-secondary" onclick="resetForm()">Reset</button>
+        </div>
+
+        <div class="result-box" id="resultBox" style="display:none;">
+            <h3>Hasil Perhitungan Luas</h3>
+            <p id="hasilLuas">Luas = 0 cm²</p>
+        </div>
+
+        <div class="output-area" id="outputArea">
+            <p class="empty-output">Belum ada perhitungan yang dilakukan.</p>
+        </div>
+    </div>
+    <script src="soal2.js"></script>
+</body>
+</html>
